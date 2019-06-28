@@ -148,7 +148,7 @@ cloudinary.config({
     
     router.put("/:id",middleware.checkCampgroundOwnership,upload.single('image'),function(req,res){
         //find the campground 
-        Campground.findById(req.params.id, async function(err, foundCampground) {
+        Campground.findById(req.params.id, async function(err, foundCampground){
             if(err){
                req.flash("error",err.message);
              return  res.redirect("back");

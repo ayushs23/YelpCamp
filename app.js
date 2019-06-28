@@ -19,7 +19,10 @@ require('dotenv').config();
         commentRoutes       = require("./routes/comments.js"),
         indexRoutes         = require("./routes/index.js");
         
-        mongoose.connect("mongodb://localhost/Yelp_camp_v9", {useNewUrlParser: true });
+     var url=process.env.DATABASEURL || '"mongodb://localhlp_cost/Yeamp_v9", {useNewUrlParser: true }';
+        
+        mongoose.connect(url);
+       
         app.use(bodyParser.urlencoded({extended:true}));
         app.set("view engine","ejs");  
         app.use(express.static(__dirname+"/public"));
