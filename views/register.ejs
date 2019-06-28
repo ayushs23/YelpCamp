@@ -1,0 +1,17 @@
+    <% include ./partials/header %>
+
+<h1 style="text-align:center">Sign Up</h1>
+ <div style="width:30%; margin:30px auto;">
+<form method="POST" action="/register">
+  <div class="form-group"><lable for="username">Username</lable> <input class="form-control" type="text" name="username" placeholder="UserName" required></div>
+    <div class="form-group"><lable for="password">Password</lable><input class="form-control" type="password" name="password" placeholder="Password" required></div>
+    <div class="form-group"><lable for="avatar">Avatar</lable> <input class="form-control" type="text" name="avatar" placeholder="Avatar Url"></div>
+  <div class="form-group"><lable for="firstName">First Name</lable> <input class="form-control" type="text" name="firstName" placeholder="First Name"></div>
+  <div class="form-group"><lable for="lastName">Last Name</lable> <input class="form-control" type="text" name="lastName" placeholder="Last Name"></div>
+<div class="form-group"><lable for="username">E-mail</lable> <input class="form-control" type="email" name="email" placeholder="jhonDoe@example.com" required></div>    
+    <div class="form-group"><lable for="adminCode">Admin Code(only for Admin's)</lable><input class="form-control" type="password" name="adminCode" placeholder="Admin Secret Code"></div>
+   <div class="form-group"> <button  class="form-control btn btn-md btn-primary" style="width:50%;">Sign Up!</button>
+      <a style="width:48%;"class="btn btn-primary" href="/campgrounds">Go Back</a></div>
+
+</form></div>
+    <% include ./partials/footer %>

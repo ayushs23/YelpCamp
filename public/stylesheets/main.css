@@ -1,0 +1,27 @@
+.thumbnail img{
+    width:100%;
+}
+.thumbnail{
+    padding:0;
+}
+.thumbnail .caption-full{
+    padding:9px;
+}
+#delete-form{
+    display: inline;
+}
+.edit-comment-form{
+    display: none;
+}
+#thumbnail{
+    border: 2px solid #ddd;
+    padding:1px;
+    border-radius: 4px;
+margin:0;
+width:650px;
+}
+#thumbnail img{
+    width: 200px;
+    height: 150px;
+         border-radius: 4px;
+}
