@@ -22,7 +22,7 @@
     "mailgun": "^0.5.0",
     "mailgun-js": "^0.22.0",
     "method-override": "^3.0.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "mongoose": "^5.4.15",
     "multer": "^1.4.1",
     "nodemailer": "^6.2.1",
